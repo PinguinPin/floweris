@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+.container__product {
+    display: flex;
+    width: 1370px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product__card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    /* border: 2px solid black;
+    border-radius: 30px; */
+    align-items: start;
+    margin: 0px 25px 25px 25px;
+}
+
+.product__name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.poduct__img {
+    width: 300px;
+    height: 300px;
+}
+
+.product__price {
+    padding: 10px 0px 10px 0px;
+    
+}
+
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    box-sizing: content-box;
+} 
+
+header{
+    height: 100vh;
+    width: 100wh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/img/lan-2.jpg);
+    color: white;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px 15px 0px;
+    margin: 0px 10px 0px 10px;
+    
+}
+.header__logo {
+    font-size: 50px;
+}
+.header__menu {
+    display: flex;
+    font-size: 20px;
+}
+.header__item {
+    margin-left: 20px;
+    padding-top: 15px;
+}
+a.header__item{
+    text-decoration: none;
+    color: white;
+}
+h1.header__zagolovok {
+    margin-top: 150px;
+    margin-bottom: 25px;
+    font-size: 80px;
+}
+p.header__paragraf {
+    color: rgb(238, 238, 238);
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+a.header__button {
+    padding: 30px 140px;
+    border-radius: 30px;
+    background-color: rgba(228, 199, 228, 0.4);
+    color: white;
+    font-size: 30px;
+}
+a.header__button:hover {
+    background-color: rgb(228, 199, 228);
+}
+.main__products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+.main__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+.main__blockName {
+    font-size: 25px;
+    border-bottom: 5px solid rgb(33, 121, 204);
+}
+.main__button {
+    padding: 15px 50px;
+    color: black;
+    font-size: 20px;
+    border: 3px solid rgba(33, 121, 204, 0.6);
+    border-radius: 30px;
+    margin: 0px 10px 0px 10px;
+}
+.main__button:hover {
+   background-color: rgb(33, 121, 204); 
+}
+.green {
+    color: white;
+    background-color: rgba(2, 202, 2, 0.6);
+    border: 0;
+}
+.green:hover {
+   background-color: rgb(2, 202, 2); 
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content:target {
+    display: block;
+  }
+
+  .tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+    order: -1;
+  }
+
+  .tab-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    background: 0 0;
+    border: 1px solid transparent;
+    margin-bottom: -1px;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    -webkit-appearance: button;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+
+  #content-1:target~.tab-nav>[href="#content-1"],
+  #content-2:target~.tab-nav>[href="#content-2"],
+  #content-3:target~.tab-nav>[href="#content-3"] {
+    color: #000;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    cursor: default;
+  }
+
